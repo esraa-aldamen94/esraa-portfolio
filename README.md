@@ -22,7 +22,7 @@ This repository is a **portfolio template** that highlights my skills and real-w
 ## 📫 Contact Me
 
 - 📧 Email: esra.aldamen94@gmail.com  
-- 📍 Location: Amman, Jordan  
+- 📍 Location: Jordan  
 - 🌐 [Portfolio Website](https://esraa-aldamen94.github.io/esraa-portfolio/) | [LinkedIn](https://linkedin.com/in/esraaldamen) | [GitHub](https://github.com/esraaldamen)
 
 ---
