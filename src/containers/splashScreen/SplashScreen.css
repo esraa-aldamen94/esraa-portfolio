@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Yellowtail";
+  src: url("../../assets/fonts/Yellowtail-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .splash-container {
   display: flex;
   flex-direction: column;
@@ -14,10 +21,9 @@
   font-size: 2.5rem;
   text-decoration: none;
 }
+
 .splash-title {
-  font-family: "Agustina Regular", cursive;
-  font-weight: bold;
+  font-family: "Yellowtail", cursive;
   font-variant-ligatures: no-common-ligatures;
-  -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
 }

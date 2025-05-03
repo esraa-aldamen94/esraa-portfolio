@@ -1,22 +1,19 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { bigProjects } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
+    if (!url) return;
+    const win = window.open(url, "_blank");
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
-    return null;
-  }
+  const { isDark } = useContext(StyleContext);
+  if (!bigProjects.display) return null;
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
@@ -33,59 +30,70 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
-                <div
-                  key={i}
-                  className={
-                    isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
-                  }
-                >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
-                  <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {project.projectName}
-                    </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {project.projectDesc}
-                    </p>
-                    {project.footerLink ? (
-                      <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    ) : null}
+            {bigProjects.projects.map((project, i) => (
+              <div
+                key={i}
+                className={
+                  isDark
+                    ? "dark-mode project-card project-card-dark"
+                    : "project-card project-card-light"
+                }
+              >
+                {project.image && (
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt={project.projectName}
+                      className="card-image"
+                    />
                   </div>
+                )}
+
+                <div className="project-detail">
+                  <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
+                    {project.projectName}
+                  </h5>
+
+                  <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
+                    {project.projectDesc}
+                  </p>
+
+                  {project.features && project.features.length > 0 && (
+                    <div className="project-features">
+                      <h6>📋 Features:</h6>
+                      <ul>
+                        {project.features.map((feature, idx) => (
+                          <li key={idx}>{feature}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {project.technologies && (
+                    <div className="project-tech">
+                      <h6>🧰 Technologies:</h6>
+                      <p>{project.technologies}</p>
+                    </div>
+                  )}
+
+                  {project.footerLink && (
+                    <div className="project-card-footer">
+                      {project.footerLink.map((link, idx) => (
+                        <span
+                          key={idx}
+                          className={
+                            isDark ? "dark-mode project-tag" : "project-tag"
+                          }
+                          onClick={() => openUrlInNewTab(link.url)}
+                        >
+                          {link.name}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>

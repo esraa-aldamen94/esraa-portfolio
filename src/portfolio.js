@@ -4,7 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Splash Screen
 
 const splashScreen = {
@@ -20,370 +20,217 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Esra’a Emad Aldamen",
+  title: "Hi all, I'm Esra’a",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Mobile Application Developer specializing in Flutter 🚀 with hands-on experience in building user-friendly mobile applications, state management, and API integration."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1XhJlLr4fUKlblQOOpS9Xp0S2E65B69NP/view?usp=sharing", // رابط السيرة الذاتية
+  displayGreeting: true
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  github: "https://github.com/esraa-aldamen94",
+  linkedin: "https://www.linkedin.com/in/esra-aldamen",
+  gmail: "esra.aldamen94@gmail.com",
+  display: true
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Passionate Mobile App Developer specialized in Flutter",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "⚡ Flutter & Dart development for iOS and Android",
+"⚡ UI/UX design and responsive implementation with Flutter",
+    "⚡ State Management using Provider and Cubit",
+    "⚡ Firebase integration (Auth, Firestore, Storage)",
+    "⚡ API Integration and working with RESTful APIs",
+    "⚡ Local storage with SQLite & Shared Preferences",
+    "⚡ Secure storage for sensitive data",
+    "⚡ Localization and multi-language support",
+    "⚡ Theme customization and dark mode",
+    "⚡ JSON Parsing and Data Serialization",
+
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    // استخدام أيقونات Devicon بدلاً من Font Awesome للتقنيات التي لا تتوفر في Font Awesome
+    { skillName: "Flutter", fontAwesomeClassname: "devicon-flutter-plain colored" },
+    { skillName: "Dart", fontAwesomeClassname: "devicon-dart-plain colored" },
+    { skillName: "Firebase", fontAwesomeClassname: "fas fa-fire", customColorClass: "firebase-icon" },
+    { skillName: "SQLite", fontAwesomeClassname: "fas fa-database", customColorClass: "database-icon" },
+    { skillName: "RESTful APIs", fontAwesomeClassname: "fas fa-exchange-alt", customColorClass: "rest-api-icon" },
+    { skillName: "JSON", fontAwesomeClassname: "fas fa-code", customColorClass: "json-icon" },
+    { skillName: "Shared Preferences", fontAwesomeClassname: "fas fa-save", customColorClass: "shared-pref-icon" },
+    { skillName: "Secure Storage", fontAwesomeClassname: "fas fa-shield-alt", customColorClass: "secure-storage-icon" },
+    { skillName: "Localization", fontAwesomeClassname: "fas fa-language", customColorClass: "localization-icon" },
+    { skillName: "Theme", fontAwesomeClassname: "fas fa-paint-brush", customColorClass: "theme-icon" },
+    { skillName: "Provider", fontAwesomeClassname: "fas fa-plug", customColorClass: "provider-icon" },
+    { skillName: "Cubit", fontAwesomeClassname: "fas fa-cube", customColorClass: "cubit-icon" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// Education
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Al-Balqa Applied University",
+      logo: require("./assets/images/alBalqaLogo.jpg"), // Put the university logo path here
+      subHeader: "Bachelor’s degree in Communication and Software Engineering",
+      duration: "2012 - 2017",
+desc: "The Communication Engineering focused on electrical engineering fundamentals and their use in telecommunications.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "After graduation, I trained for 3 months at Umniah in the RF Optimization Department."
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
 
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
+// Work Experience
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Flutter Developer Intern",
+      company: "AppTrainers",
+      companylogo: require("./assets/images/appTrainersLogo.png"),
+      date: "Dec 2024 - Present",
+      desc: "Mobile application developer specializing in Flutter with hands-on experience in developing interactive user interfaces, managing application state, integrating APIs, and optimizing performance across Android and iOS platforms.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed two basic Flutter applications: a Weather App and a Notes App, focusing on interactive UIs and application state management using Provider and Cubit patterns.",
+        "Currently working on a comprehensive food ordering application that displays food menus, enables users to place orders, and manages delivery services, with backend API integration and quality assurance processes.",
+        "Gained hands-on experience with SQLite for local storage, secure storage, and Shared Preferences for saving user settings and essential application data.",
+        "Implemented third-party service integrations and consumed REST APIs using appropriate Flutter packages to handle HTTP requests and process JSON responses.",
+        "Optimized application performance for both Android and iOS platforms, focusing on achieving fast, responsive applications while maintaining clean and efficient code.",
+        "Served as the Scrum Master for the team, utilizing Jira to assign and track tasks, and addressing any blockers by collaborating with team members and management to find solutions.",
+        "Organized daily stand-up meetings - either on-site or via Zoom - to monitor team progress, confirm task completion, and report blockers to the project management team.",
+        "Applied responsive design principles to create user interfaces that adapt to various screen sizes and provide a seamless user experience.",
+        "Developed teamwork skills through effectively dividing tasks, sharing ideas, and holding regular meetings to resolve issues facing the team."
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
+// Big Projects Section
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My Projects",
+  subtitle: "Some of the apps I've worked on",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/weatherAppLogo.png"),
+      projectName: "Weather App",
+      projectDesc: "A responsive Flutter weather application that displays current conditions and 3-day forecasts for any city. Built with MVC architecture and Cubit state management, it features Google Maps integration to visualize city locations, Lottie animations, and a clean UI design.",
+      features: [
+        "Real-time weather data",
+        "City-based search",
+        "Interactive maps",
+        "3-day forecast"
+      ],
+      technologies: "Flutter, Dart, Cubit, HTTP, Google Maps",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/esraa-aldamen94/weather_app"
+        },
+        {
+          name: "Watch Demo",
+          url: "https://drive.google.com/drive/folders/1HhgYqbmThs2UUYixU1NPM0CQrdltoV1d?usp=drive_link" // استبدل هذا برابط فيديو تطبيق الطقس الخاص بك
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/notesAppLogo.png"),
+      projectName: "Notes App",
+      projectDesc: "A feature-rich Flutter notes application supporting both Arabic and English languages. Implemented with Provider state management and SQLite local storage with user authentication. Allows creating text notes with images from camera or gallery, and includes Google Mobile Ads integration.",
+      features: [
+        "User authentication",
+        "Multi-language support",
+        "Image attachments",
+        "Color-coded notes"
+      ],
+      technologies: "Flutter, Provider, SQLite, SharedPreferences",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/esraa-aldamen94/notes_app"
+        },
+        {
+          name: "Watch Demo",
+          url: "https://drive.google.com/drive/folders/1KktEZxlM1VpsiYSj4fB8QHtcgP3pWEbB?usp=sharing" // استبدل هذا برابط فيديو تطبيق الملاحظات الخاص بك
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievements
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Achievements And Certifications 🏆"),
+subtitle: "Achievements and certifications I have completed to enhance my technical skills.",
   achievementsCards: [
+   {
+     title: "Flutter Development Internship",
+     subtitle: "Currently undergoing intensive Flutter development training at AppTrainers. Dec 2024 - Present",
+     image: require("./assets/images/flutterInternshipLogo.jpeg"),
+     imageAlt: "Flutter Internship",
+     footerLink: [
+       {
+         name: "Learn More",
+         url: "https://www.linkedin.com/posts/apptrainers_%D8%AE%D8%B1%D9%8A%D8%AC-%D8%A7%D8%AD%D8%AF-%D8%AA%D8%AE%D8%B5%D8%B5%D8%A7%D8%AA-%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%B3%D8%AC%D9%84-activity-7234834354449846273-4YK7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8pfjcBV7f41-9gc-QN2ms0ia_WL05m1fg"
+       }
+     ]
+   },
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "ASP.NET Course",
+      subtitle: "Pioneers Academy | Amman | March 2019 - July 2019",
+      image: require("./assets/images/Asp.jpg"),
+      imageAlt: "ASP.NET Course Certificate",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certificate",
+          url: "https://drive.google.com/drive/folders/1tEXfuVoltSyOwmKUcLQ1rKyl7rD34Uiz?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "CCNA Routing & Switching Certification",
+      subtitle: "Cisco Networking Academy | University of Jordan | Amman | March 2018 - July 2018",
+      image: require("./assets/images/cisco.jpg"),
+      imageAlt: "CCNA Certificate",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/drive/folders/1OB9AQlaSGsbhbuc-lXT2BbbLfSZr38ic?usp=sharing"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
+// Contact Info
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle: "Discuss a project or just want to say hi? My inbox is open for all.",
+  number: "0780379885",
+  email_address: "esra.aldamen94@gmail.com"
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+  title: "CV",
+  subtitle: "Feel free to download my CV",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
-
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
-};
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
-};
-
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+// Open Source Projects Link
+const openSource = "https://github.com/esraa-aldamen94";  // Your GitHub or any other open-source platform
 
 export {
   illustration,
@@ -392,16 +239,10 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
-  twitterDetails,
-  isHireable,
   resumeSection
 };

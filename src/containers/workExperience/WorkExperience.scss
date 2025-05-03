@@ -1,37 +1,24 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+/* أضف هذه التنسيقات إلى ملف CSS/SCSS الرئيسي للمشروع */
+
+/* محاولة استهداف نقاط الخبرة بشكل أكثر دقة */
+#experience .experience-card ul li {
+  font-size: 14px !important;
+  margin-bottom: 15px !important;
+  line-height: 1.4 !important;
 }
 
-.experience-heading {
-  font-size: 56px;
-  font-weight: 400;
+/* محاولة بديلة باستخدام مسار أكثر تحديدًا */
+.experience-cards-div .experience-card .card-body .card-description ul li {
+  font-size: 14px !important;
+  margin-bottom: 15px !important;
+  line-height: 1.4 !important;
 }
 
-.experience-container {
-  display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+/* محاولة أخرى باستخدام منتقي عام للبحث عن جميع النقاط في قسم الخبرة */
+#workExperience ul li {
+  font-size: 14px !important;
+  margin-bottom: 15px !important;
+  line-height: 1.4 !important;
 }
 
-.experience-container > * {
-  flex: 1;
-}
-
-/* Media Query */
-
-@media (max-width: 1380px) {
-  .experience-heading {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-}
+/* استخدام !important للتأكد من أن هذه الأنماط تتجاوز أي أنماط أخرى */
