@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/esraa-portfolio/static/css/main.93d357b5.css",
+    "main.js": "/esraa-portfolio/static/js/main.47a70ad4.js",
+    "static/css/64.bba8fa55.chunk.css": "/esraa-portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/esraa-portfolio/static/js/64.56dc6704.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/esraa-portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.a3d5ad02.chunk.js": "/esraa-portfolio/static/js/769.a3d5ad02.chunk.js",
+    "static/media/Asp.jpg": "/esraa-portfolio/static/media/Asp.35bbf2a6d1ed60949c7c.jpg",
+    "static/media/cisco.jpg": "/esraa-portfolio/static/media/cisco.95b2c7b39456ed57ca14.jpg",
+    "static/media/Montserrat-Regular.ttf": "/esraa-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/resume.pdf": "/esraa-portfolio/static/media/resume.90ad813334feb2fc10e0.pdf",
+    "static/media/notesAppLogo.png": "/esraa-portfolio/static/media/notesAppLogo.9e8cd66b6d0701f1011a.png",
+    "static/media/flutterInternshipLogo.jpeg": "/esraa-portfolio/static/media/flutterInternshipLogo.8c3c8d56db01cbffda00.jpeg",
+    "static/media/Agustina.woff": "/esraa-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/alBalqaLogo.jpg": "/esraa-portfolio/static/media/alBalqaLogo.bd3e7f54e73e57ff3b72.jpg",
+    "static/media/Yellowtail-Regular.ttf": "/esraa-portfolio/static/media/Yellowtail-Regular.68015177cbf9575be4a4.ttf",
+    "static/media/manOnTable.svg": "/esraa-portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/weatherAppLogo.png": "/esraa-portfolio/static/media/weatherAppLogo.543aade89c9ea4a35a93.png",
+    "static/media/contactMailDark.svg": "/esraa-portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/esraa-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "index.html": "/esraa-portfolio/index.html",
+    "main.93d357b5.css.map": "/esraa-portfolio/static/css/main.93d357b5.css.map",
+    "main.47a70ad4.js.map": "/esraa-portfolio/static/js/main.47a70ad4.js.map",
+    "64.bba8fa55.chunk.css.map": "/esraa-portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/esraa-portfolio/static/js/64.56dc6704.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/esraa-portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.a3d5ad02.chunk.js.map": "/esraa-portfolio/static/js/769.a3d5ad02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93d357b5.css",
+    "static/js/main.47a70ad4.js"
+  ]
+}
